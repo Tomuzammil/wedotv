@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import ReactPlayer from 'react-player';
+import BackSpaceKey from '../Components/BackSpaceKey';
 
 
 function MoviePlayerPage() {
@@ -40,6 +41,7 @@ function MoviePlayerPage() {
         getVideo();
     }, [])
     return (
+        <>
         <div className='w-full h-[100vh]'>
 <ReactPlayer 
 width={"100%"}
@@ -48,6 +50,8 @@ controls
 playing={true}
 url={playerapi} />
         </div>
+        <BackSpaceKey/>
+        </>
     )
 }
 
