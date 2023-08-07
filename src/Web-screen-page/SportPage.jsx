@@ -88,7 +88,7 @@ componentDidMount() {
                           this.state.sportallvideoapi.map((data) => {
                             //   console.log(data)
                               return (
-                                  <Link to={`/episodes/${data.id}`} key={data.id}><img src={data.files.poster_portrait_480 } className="w-[250px] h-[325px]" alt="" /></Link>
+                                  <Link to={`/episodes/${data.id}`} key={data.id}><img src={data.files.poster_portrait_480 } className="w-[250px] h-[325px] hover:border-4 hover:border-red-700 focus:border-4 focus:border-red-700" alt="" /></Link>
                               )
                           })
                       }

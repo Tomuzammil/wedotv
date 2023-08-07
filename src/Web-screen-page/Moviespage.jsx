@@ -96,7 +96,7 @@ export default class Moviespage extends Component {
                 this.state.allvideo.map((data)=>{
                     // console.log(data)
                     return(
-                       <Link to={`/Moviedetail/${data.id}`} key={data.id}><img src={data.files.thumb_480} className="w-[250px] h-[325px]" alt="" /></Link>
+                       <Link to={`/Moviedetail/${data.id}`} key={data.id}><img src={data.files.thumb_480} className="w-[250px] h-[325px] hover:border-4 hover:border-red-700 focus:border-4 focus:border-red-700" alt="" /></Link>
                     )
                 })
               }

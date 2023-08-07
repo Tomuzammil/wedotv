@@ -53,7 +53,7 @@ axios.request(config)
             // console.log(data)
             return(
                 <SwiperSlide >
-                    <Link to={`/player/${data.id}`} key={data.id}><img src={data.files?.poster_landscape} className='w-full h-[40vh]' alt="" /></Link>
+                    <Link to={`/player/${data.id}`} key={data.id}><img src={data.files?.poster_landscape} className='w-full h-[40vh] hover:border-4 hover:border-red-700 focus:border-4 focus:border-red-700' alt="" /></Link>
                     <h4 className='text-white mt-2 font-sans'>{data.title}</h4>
                 </SwiperSlide>
               )
