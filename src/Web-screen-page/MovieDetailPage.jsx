@@ -10,6 +10,7 @@ const history = useNavigate();
     const params = useParams();
 
     useEffect(() => {
+        console.log("use Effect")
         getVideo();
     }, []);
 
@@ -32,7 +33,7 @@ const history = useNavigate();
         axios
             .request(config)
             .then((response) => {
-                console.log(response.data.result.videos[0]);
+                // console.log(response.data.result.videos[0]);
                 setVideoDetail(response.data.result.videos[0]);
                 // setLoading(false);
             })

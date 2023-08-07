@@ -9,6 +9,7 @@ import SortBy from '../Components/Togglepage/SortBy';
 
 export default class Moviespage extends Component {
     constructor(props) {
+      console.log("consuctoe movie page")
         super(props)
         this.state={
             allvideo: [],
@@ -62,7 +63,7 @@ export default class Moviespage extends Component {
 
     componentDidMount(){
         this.getallvideo();
-        // console.log(this.getallvideo())
+        console.log("components did mounted movie page")
     }
   
     render() {

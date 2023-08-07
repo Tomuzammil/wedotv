@@ -36,7 +36,7 @@ export default class HomePage extends Component {
     axios
       .request(config)
       .then((response) => {
-        console.log(JSON.stringify(response.data));
+        // console.log(JSON.stringify(response.data));
         localStorage.setItem("token", response.data.result.token);
       })
       .catch((error) => {
@@ -64,6 +64,7 @@ export default class HomePage extends Component {
     axios
       .request(config)
       .then((response) => {
+      
         // console.log(response.data.template.sections);
         this.setState({ moviedata: response.data.template.sections });
         this.setState({ loading: false});
@@ -75,7 +76,7 @@ export default class HomePage extends Component {
   }
 
   componentDidMount() {
-    console.log("did mpunt")
+    console.log("components did mount")
     this.postToken();
     this.getTemplate();
 
@@ -99,7 +100,7 @@ export default class HomePage extends Component {
             {
               this.state.moviedata.map((data) => {
                 if (data.label !== "Slider") {
-                  console.log(data.label)
+                  // console.log(dasta.label)
                   return (
                     <div className="" key={data.label}>
                       <h1 className='text-white text-md font-semibold font-mono'>{data.label}</h1>
