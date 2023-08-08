@@ -103,7 +103,7 @@ export default class HomePage extends Component {
                   // console.log(dasta.label)
                   return (
                     <div className="" key={data.label}>
-                      <h1 className='text-white text-md font-semibold font-mono'>{data.label}</h1>
+                      <h1 className='text-white text-md font-semibold font-sans'>{data.label}</h1>
                       
                       <div>
                       <Swiper spaceBetween={10} slidesPerView={6} className=" mb-10">
