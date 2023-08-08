@@ -51,6 +51,9 @@ export default class Seriespage extends Component {
           this.setState({allvideo:response.data.result.videos});
           this.setState({ loading: false});
           this.setState({genrestoggle:false});
+          if(include == "")
+          this.setState({genrestext:"Genres"})
+      else 
           this.setState({genrestext:include})
         })
         .catch((error) => {

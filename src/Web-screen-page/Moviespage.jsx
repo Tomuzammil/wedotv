@@ -52,7 +52,10 @@ export default class Moviespage extends Component {
           this.setState({allvideo:response.data.result.videos});
           this.setState({ loading: false});
           this.setState({genrestoggle:false});
-          this.setState({genrestext:include})
+          if(include == "")
+              this.setState({genrestext:"Genres"})
+          else 
+              this.setState({genrestext:include})
         })
         .catch((error) => {
           console.log(error);
