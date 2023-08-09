@@ -112,7 +112,7 @@ export default class HomePage extends Component {
                         return (
                           <SwiperSlide key={element.id} >
                            <Link to={`/Moviedetail/${element.id}`}>
-                            <img className='hover:border-4 hover:border-red-700 focus:border-4 focus:border-red-700' src={element.files.poster_portrait_320} alt={element.title} />
+                            <img className='hover:border-4 hover:border-red-700 focus:border-4 focus:border-red-700 active:border-4 active:border-red-800 ' src={element.files.poster_portrait_320} alt={element.title} />
                             </Link>
                           </SwiperSlide>
                         );

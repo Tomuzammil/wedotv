@@ -14,6 +14,7 @@ import MoviePlayerPage from './Web-screen-page/MoviePlayerPage';
 function App() {
   return (
 <>
+
 <Routes>
   <Route path='/' element={<HomePage/>} />
   <Route path='/Movies' element={<Moviespage/>} />
