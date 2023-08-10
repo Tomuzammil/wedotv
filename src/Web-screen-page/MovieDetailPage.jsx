@@ -65,7 +65,7 @@ const MovieDetailPage = () => {
                         <div className="flex gap-x-[8.5rem]"><h3 className='text-yellow-500'>Cast</h3><h3>{videodetail.meta?.cast}</h3></div>
                         <div className="flex gap-x-14 my-5">
                             <Link to={`/player/${videodetail.id}`}> <button className='bg-white text-black font-bold font-sans px-6 py-3 rounded-md focus:bg-red-700 hover:bg-red-700'>Play Movie</button></Link>
-                            <button onClick={() => setNavigatedBack(history(-1))} className='bg-white text-black font-bold font-sans px-6 py-3 rounded-md focus:bg-red-700 hover:bg-red-700'>Go Back</button>
+                            <button onClick={() =>history(-1)} className='bg-white text-black font-bold font-sans px-6 py-3 rounded-md focus:bg-red-700 hover:bg-red-700'>Go Back</button>
                         </div>
                     </div>
                 </div>

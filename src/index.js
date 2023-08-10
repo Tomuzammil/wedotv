@@ -5,16 +5,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import BackState from './Contexts/BackState';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <StrictMode>
-  <BackState>
   <BrowserRouter>
     <App />
   </BrowserRouter>
-  </BackState>
 // </StrictMode>
 );
 
